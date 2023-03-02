@@ -1,0 +1,70 @@
+<div class="section-full bg-white content-inner owl-out">
+  <div class="container">
+    <div class="section-head text-black text-center">
+      <h2 class="box-title">From The Blog</h2>
+      <div class="dlab-separator bg-primary"></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+    </div>
+    <!-- <div class="blog-carousel owl-carousel owl-btn-center-lr owl-btn-2 primary"> -->
+    <owl-carousel-o [options]="customOptions" class="blog-carousel-1 owl-carousel-1 owl-btn-center-lr owl-btn-2 primary">
+    <ng-template carouselSlide *ngFor = "let blog of data">
+      <div class="item">
+        <div class="blog-post style2 blog-grid">
+          <div class="dlab-post-media"> 
+            <a routerLink="/{{blog.url}}"><img src="assets/images/blog/grid/{{blog.image}}" alt=""></a> 
+          </div>
+          <div class="dlab-info">
+            <div class="dlab-post-meta">
+              <ul>
+                <li class="post-comment"><i class="icon-speech"></i> <a href="javascript:vois(0);">{{blog.comments}}</a> </li>
+                <li class="post-date"><i class="icon-calendar"></i> <span>{{blog.post_date}}</span> </li>
+              </ul>
+            </div>
+            <div class="dlab-post-title">
+              <h5 class="post-title"><a routerLink="/{{blog.url}}">{{blog.title}}</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </ng-template>
+</owl-carousel-o>
+      <!-- <div class="item">
+        <div class="blog-post style2 blog-grid">
+          <div class="dlab-post-media"> 
+            <a href="javascript:vois(0);"><img src="assets/images/blog/grid/pic6.jpg" alt=""></a> 
+          </div>
+          <div class="dlab-info">
+            <div class="dlab-post-meta">
+              <ul>
+                <li class="post-comment"><i class="icon-speech"></i> <a href="javascript:vois(0);">03</a> </li>
+                <li class="post-date"><i class="icon-calendar"></i> <span>10  Aug 2019</span> </li>
+              </ul>
+            </div>
+            <div class="dlab-post-title ">
+              <h5 class="post-title"><a href="javascript:vois(0);">Directory Will Be A Thing Of The Past.</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="blog-post style2 blog-grid">
+          <div class="dlab-post-media"> 
+            <a href="javascript:vois(0);"><img src="assets/images/blog/grid/pic7.jpg" alt=""></a> 
+          </div>
+          <div class="dlab-info">
+            <div class="dlab-post-meta">
+              <ul>
+                <li class="post-comment"><i class="icon-speech"></i> <a href="javascript:vois(0);">03</a> </li>
+                <li class="post-date"><i class="icon-calendar"></i> <span>10  Aug 2019</span> </li>
+              </ul>
+            </div>
+            <div class="dlab-post-title ">
+              <h5 class="post-title"><a href="javascript:vois(0);">Ten Things Your Competitors Know About.</a></h5>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    <!-- </div> -->
+  </div>
+</div>

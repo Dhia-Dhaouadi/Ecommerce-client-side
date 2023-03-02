@@ -1,0 +1,64 @@
+
+<ng-template ngFor let-sectionData [ngForOf]="data">
+  <div class="bnr-content text-white">
+    <h1 [innerHTML]="sectionData.section_title"></h1>
+    <!-- <div class="owl-location-carousel owl-btn-1 owl-btn-center-lr owl-dots-none owl-carousel"> -->
+    <owl-carousel-o [options]="customOptions" class="owl-location-carousel owl-btn-1 owl-btn-center-lr owl-dots-none owl-carousel-1">
+      <ng-template carouselSlide *ngFor = "let item of sectionData.items">
+          <div class="item">
+            <div class="featured-bx style3">
+              <div class="featured-media">
+                <img src="assets/images/featured/{{item.image}}" alt=""/>
+              </div>	
+              <div class="featured-info">
+                <h5 class="title"><a routerLink="/{{item.url}}">{{item.location}}</a></h5>
+                <ul class="featured-category">
+                  <li> {{item.total_listing}} Listing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </ng-template>
+    </owl-carousel-o>
+      <!-- <div class="item">
+        <div class="featured-bx style3">
+          <div class="featured-media">
+            <img src="assets/images/featured/pic3.jpg" alt=""/>
+          </div>	
+          <div class="featured-info">
+            <h5 class="title"><a routerLink="/listing-details">United States</a></h5>
+            <ul class="featured-category">
+              <li> 12+ Listing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="featured-bx style3">
+          <div class="featured-media">
+            <img src="assets/images/featured/pic4.jpg" alt=""/>
+          </div>	
+          <div class="featured-info">
+            <h5 class="title"><a routerLink="/listing-details">Korea</a></h5>
+            <ul class="featured-category">
+              <li> 09+ Listing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="featured-bx style3">
+          <div class="featured-media">
+            <img src="assets/images/featured/pic5.jpg" alt=""/>
+          </div>	
+          <div class="featured-info">
+            <h5 class="title"><a routerLink="/listing-details">Japan</a></h5>
+            <ul class="featured-category">
+              <li> 30+ Listing</li>
+            </ul>
+          </div>
+        </div>
+      </div> -->
+    <!-- </div> -->
+  </div>
+</ng-template>

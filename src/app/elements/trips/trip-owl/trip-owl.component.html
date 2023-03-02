@@ -1,0 +1,43 @@
+<div class="container-fluid">
+<ng-template ngFor let-sectionData [ngForOf]="data">
+					<div class="section-head text-black text-center">
+						<h2 class="box-title">{{sectionData.section_title}}</h2>
+						<div class="dlab-separator bg-primary"></div>
+						<p>{{sectionData.section_description}}</p>
+					</div>
+  <owl-carousel-o [options]="customOptions" class="most-visite11 owl-carousel11 owl-btn-center-lr owl-btn-1 primary">
+    <ng-template carouselSlide *ngFor = "let item of sectionData.items">
+						<div class="item">
+							<div class="listing-bx featured-star-left m-b30">
+								<div class="listing-media">
+									<img src="assets/images/listing/{{item.image}}" alt="">
+									<ul class="featured-star">
+										<li><i class="fa fa-star"></i></li>
+										<li><i class="fa fa-star"></i></li>
+										<li><i class="fa fa-star"></i></li>
+										<li><i class="fa fa-star"></i></li>
+										<li><i class="fa fa-star"></i></li>
+									</ul>
+								</div>
+								<div class="listing-info">
+									<h3 class="title"><a routerLink="/{{item.link}}">{{item.title}}</a></h3>
+									<p>{{item.description}}</p>
+									<ul class="place-info">
+										<li class="place-location"><i class="fa fa-map-marker"></i>{{item.location}}</li>
+                    <li class="open"><i class="fa fa-check"></i>{{item.opening_status}}</li>
+									</ul>
+								</div>
+								<ul class="wish-bx">
+									<li><a class="like-btn" href="javascript:void(0)"><i class="fa fa-heart"></i></a></li>
+									<li><a class="info-btn" href="javascript:void(0)"><i class="fa fa-leaf"></i></a></li>							
+								</ul>
+							</div>
+						</div>
+    </ng-template>
+  </owl-carousel-o>
+  
+</ng-template>
+	
+  </div>
+
+    

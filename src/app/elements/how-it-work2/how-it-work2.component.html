@@ -1,0 +1,47 @@
+<div class="section-full bg-img-fix bg-white content-inner">
+  <div class="container">
+    <div class="section-head text-center">
+      <h2 class="box-title">How It Works?</h2>
+      <div class="dlab-separator bg-primary"></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6"  *ngFor="let howItWork of data">
+        <div class="icon-bx-wraper center work-box style1 m-b30">
+          <div class="box-count">{{howItWork.box_count}}</div>
+          <div class="icon-bx-lg radius bg-gray-1 m-b20">
+            <a href="javascript:void(0)" class="icon-cell"><i class="{{howItWork.icon_class}} text-primary"></i></a> 
+          </div>
+          <div class="icon-content">
+            <h3 class="dlab-tilte">{{howItWork.title}}</h3>
+            <p>{{howItWork.description}}</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-lg-4 col-md-6">
+        <div class="icon-bx-wraper center work-box style1 m-b30">
+          <div class="box-count">02</div>
+          <div class="icon-bx-lg radius bg-gray-1 m-b20">
+            <a href="javascript:void(0)" class="icon-cell"><i class="ti-gift text-primary"></i></a> 
+          </div>
+          <div class="icon-content">
+            <h3 class="dlab-tilte">Find What Your Want?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="icon-bx-wraper center work-box style1 m-b30">
+          <div class="box-count">03</div>
+          <div class="icon-bx-lg radius bg-gray-1 m-b20">
+            <a href="javascript:void(0)" class="icon-cell"><i class="ti-rocket text-primary"></i></a> 
+          </div>
+          <div class="icon-content">
+            <h3 class="dlab-tilte">Explore Amazing Places</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>

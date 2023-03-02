@@ -1,0 +1,65 @@
+ <div class="row">
+  <div class="col-lg-12">
+    <div class="row">
+     <!-- <div id="owl-demo" class=""> -->
+        <owl-carousel-o [options]="customOptions" class="testimonial-one owl-loaded owl-theme owl-carousel owl-btn-center-lr owl-btn-3 owl-dots-primary-big">
+          <ng-template carouselSlide *ngFor = "let testimonial of data">
+            <div class="item">
+              <div class="client-box">
+                <div class="client-detail">
+                  <div class="client-img">
+                    <img src="assets/images/testimonials/{{testimonial.image}}" width="100" height="100" alt="">
+                  </div>
+                  <div class="client-info">
+                    <h5 class="client-name">{{testimonial.name}}</h5> 
+                    <span>{{testimonial.role}}</span> 
+                  </div>
+                </div>
+                <div class="client-info-bx">
+                  <h5>{{testimonial.sub_heading}}</h5>
+                  <p>{{testimonial.description}}</p>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </owl-carousel-o>
+      </div>
+      </div>
+    </div>
+
+        <!-- <div class="item">
+          <div class="client-box">
+            <div class="client-detail">
+              <div class="client-img">
+                <img src="assets/images/testimonials/pic2.jpg" width="100" height="100" alt="">
+              </div>
+              <div class="client-info">
+                <h5 class="client-name">Diamond Anderson</h5> 
+                <span>Founder, uihub inc.</span> 
+              </div>
+            </div>
+            <div class="client-info-bx">
+              <h5>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. </h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="client-box">
+            <div class="client-detail">
+              <div class="client-img">
+                <img src="assets/images/testimonials/pic3.jpg" width="100" height="100" alt="">
+              </div>
+              <div class="client-info">
+                <h5 class="client-name">Diamond Anderson</h5> 
+                <span>Founder, uihub inc.</span> 
+              </div>
+            </div>
+            <div class="client-info-bx">
+              <h5>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. </h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            </div>
+          </div>
+        </div> -->
+      <!-- </div> -->
+    

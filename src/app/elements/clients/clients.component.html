@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="col-lg-12">
+    <div class="client-box-area">
+      <div class="container">
+        <!-- <div class="client-carousel owl-carousel owl-none"> -->
+        <owl-carousel-o [options]="customOptions" class="client-carousel-1 owl-carousel-1 owl-none">
+          <ng-template carouselSlide *ngFor = "let client of data">
+          
+            <div class="item">
+              <div class="client-box">
+                <img src="assets/images/client-logo/{{client.image}}" alt="">
+              </div>
+            </div>
+            
+            <!-- <div class="item">
+              <div class="client-box">
+                <img src="assets/images/client-logo/logo2.png" alt="">
+              </div>
+            </div>
+            <div class="item">
+              <div class="client-box">
+                <img src="assets/images/client-logo/logo3.png" alt="">
+              </div>
+            </div>
+            <div class="item">
+              <div class="client-box">
+                <img src="assets/images/client-logo/logo4.png" alt="">
+              </div>
+            </div> -->
+          <!-- </div> -->
+        
+
+          </ng-template>
+      </owl-carousel-o>  
+      </div>
+    </div>
+  </div>
+</div>

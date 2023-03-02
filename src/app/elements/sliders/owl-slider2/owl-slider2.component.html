@@ -1,0 +1,25 @@
+<div class="dlab-bnr-inr-entry">
+      <!-- Listing Details Slider -->
+      <!-- <div class="listing-slider owl-carousel owl-btn-center-lr owl-btn-1"> -->
+      <owl-carousel-o [options]="customOptions" class="listing-slider-1 owl-carousel-1 owl-btn-center-lr owl-btn-1">
+        <ng-template carouselSlide *ngFor = "let slides of data">
+          <div class="item">
+            <div class="slider-img">
+              <img src="assets/images/main-slider/{{slides.image}}" alt="">
+            </div>
+          </div>
+        </ng-template>
+    </owl-carousel-o>   
+        <!-- <div class="item">
+          <div class="slider-img">
+            <img src="assets/images/main-slider/slide3.jpg" alt="">
+          </div>
+        </div>
+        <div class="item">
+          <div class="slider-img">
+            <img src="assets/images/main-slider/slide4.jpg" alt="">
+          </div>
+        </div> -->
+      <!-- </div> -->
+      <!-- Listing Details Slider End -->
+</div>

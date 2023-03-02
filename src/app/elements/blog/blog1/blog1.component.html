@@ -1,0 +1,77 @@
+<owl-carousel-o [options]="customOptions" class="blog-carousel-1 owl-carousel-1 owl-none blog-shadow-out">
+    <ng-template carouselSlide *ngFor = "let blog of data">
+      <div class="item">
+        <div class="blog-post dez-blog">
+          <div class="dlab-post-media"> 
+            <a routerLink="/{{blog.url}}"><img src="assets/images/blog/grid/{{blog.image}}" alt=""/></a> 
+          </div>
+          <div class="dlab-info">
+            <div class="category-tag">
+              <a routerLink="/{{blog.url}}">{{blog.catgegory}}</a>
+            </div>
+            <div class="dlab-post-title ">
+              <h5 class="post-title"><a routerLink="/{{blog.url}}">{{blog.title}}</a></h5>
+            </div>
+            <div class="dlab-post-text">
+               <p>{{blog.description}}</p>
+            </div>
+            <div class="dlab-post-meta">
+              <ul>
+                <li class="post-author"><i class="icon-user"></i>By <a routerLink="/{{blog.url}}">{{blog.author}}</a> </li>
+                <li class="post-comment"><i class="icon-speech"></i> <a routerLink="/blog-details">{{blog.comments}} Comments</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </ng-template>
+</owl-carousel-o>
+						<!-- <div class="item">
+							<div class="blog-post dez-blog">
+								<div class="dlab-post-media"> 
+									<a routerLink="/blog-details"><img src="assets/images/blog/grid/pic3.jpg" alt=""/></a> 
+								</div>
+								<div class="dlab-info">
+									<div class="category-tag">
+										<a routerLink="/blog-details">Foods</a>
+									</div>
+									<div class="dlab-post-title ">
+										<h5 class="post-title"><a routerLink="/blog-details">Directory Will Be A Thing Of The Past.</a></h5>
+									</div>
+									<div class="dlab-post-text">
+									   <p>Knowing that, you’ve optimised your pages countless amount of times, written tons of eye catching.</p>
+									</div>
+									<div class="dlab-post-meta">
+										<ul>
+											<li class="post-author"><i class="icon-user"></i>By <a routerLink="/blog-details">Rosalina</a> </li>
+											<li class="post-comment"><i class="icon-speech"></i> <a routerLink="/blog-details">08 Comments</a> </li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="blog-post dez-blog">
+								<div class="dlab-post-media"> 
+									<a routerLink="/blog-details"><img src="assets/images/blog/grid/pic2.jpg" alt=""/></a> 
+								</div>
+								<div class="dlab-info">
+									<div class="category-tag">
+										<a routerLink="/blog-details">Hotel</a>
+									</div>
+									<div class="dlab-post-title ">
+										<h5 class="post-title"><a routerLink="/blog-details">Ten Things Your Competitors Know About.</a></h5>
+									</div>
+									<div class="dlab-post-text">
+									   <p>As desperate as you are right now, you have done everything you can on your website to say.</p>
+									</div>
+									<div class="dlab-post-meta">
+										<ul>
+											<li class="post-author"><i class="icon-user"></i>By <a routerLink="/blog-details">John Smith</a> </li>
+											<li class="post-comment"><i class="icon-speech"></i> <a routerLink="/blog-details">03 Comments</a> </li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div> -->

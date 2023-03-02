@@ -1,0 +1,71 @@
+<app-loading></app-loading>
+<div class="page-wraper">
+    <div class="page-content dlab-login" style="background-image: url(assets/images/background/bgl.jpg); background-position: top right; background-blend-mode: screen;">
+        <div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-4 login-form-box">
+					<div class="login-form">
+						<div class="logo">
+							<a routerLink=""><img  alt="VentePrivée"/></a>
+						</div>
+						<div class="tab-content nav">
+							<div id="login" class="tab-pane active">
+								<form class="dlab-form">
+									<h3 class="form-title m-t0">Bienvenue à nouveau, veuillez vous connecter à votre compte</h3>
+									<div class="text-center m-b20">
+										<a href="javascript:vois(0);" class="site-button facebook btn-block border"><i class="fa fa-facebook-official m-r10"></i> Se connecter avec Facebook</a>
+									</div>
+									<div class="form-group">
+										<input name="dzName" required="" class="form-control border" placeholder="Nom d'utilisateur ou adresse e-mail" type="text"/>
+									</div>
+									<div class="form-group">
+										<input name="dzName" required="" class="form-control border" placeholder="Mot de passe" type="password"/>
+									</div>
+									<div class="form-group field-btn text-left">
+										<div class="input-block">
+											<input id="check1" type="checkbox">
+											<label for="check1">Souviens-toi de moi</label>
+										</div>
+										<a data-toggle="tab" href="#forgot-password" class="btn-link forgot-password">Mot de passe oublié</a>
+									</div>
+									<div class="form-group">
+										<button class="site-button btn-block button-md border">Connexion</button>
+									</div>
+									<div class="form-group">
+										<p class="info-bottom">Vous n'avez pas de compte ?<a data-toggle="tab" routerLink="/register" class="btn-link"> S'inscrire</a> </p>
+									</div>
+								</form>
+							</div>
+							<div id="forgot-password" class="tab-pane fade">
+								<form class="dlab-form">
+									<h3 class="form-title m-t0">Trouver votre compte</h3>
+									<div class="form-group text-center">
+										<a href="javascript:vois(0);" class="site-button facebook btn-block border"><i class="fa fa-facebook-official m-r10"></i> Se connecter avec Facebook</a>
+									</div>
+									<div class="form-group">
+										<input name="dzName" required="" class="form-control border" placeholder="Email Id" type="text"/>
+									</div>
+									<div class="form-group">
+										<button class="site-button btn-block button-md border">Envoyez-moi un nouveau mot</button>
+									</div>
+									<div class="form-group">
+										<p class="info-bottom">
+                      <a data-toggle="tab" href="#login" class="btn-link">Connexion &nbsp;| &nbsp;</a>
+											<a data-toggle="tab" routerLink="/register" class="btn-link">S'inscrire</a>
+										</p>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<div class="content-info">
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    <button class="scroltop fa fa-chevron-up" ></button>
+</div>
+

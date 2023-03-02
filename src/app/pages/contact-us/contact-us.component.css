@@ -1,0 +1,9 @@
+agm-map {
+  max-width:70%;
+  min-height:300px;
+  
+}
+.agm-map-container-inner {
+  position: unset !important;
+  overflow: auto !important;
+}

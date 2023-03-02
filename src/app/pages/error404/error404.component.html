@@ -1,0 +1,37 @@
+<app-loading></app-loading>
+<div class="page-wraper">
+	<!-- header -->
+    <app-header1></app-header1>
+    <!-- header END -->
+    <!-- Content -->
+    <div class="page-content bg-white">
+        <!-- inner page banner -->
+        <app-banner1 [data]="banner"></app-banner1>
+        <!-- inner page banner END -->
+        <div class="section-full content-inner-2">
+            <div class="container">
+                <div class="">
+					<div class="error-page">
+						<span class="error-no">404</span>
+						<span class="error-title">Page <br/> Not <br/> Found</span>
+					</div>
+					<div class="error-page-search">
+						<div class="search-bx">
+								<form role="search" method="post">
+									<div class="input-group">
+										<input name="text" type="text" class="form-control" placeholder="Search your keyword...">
+										<span class="input-group-btn">
+											<button type="submit" class="site-button"><i class="fa fa-search"></i></button>
+										</span> 
+									</div>
+								</form>
+							</div>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+    <!-- Content END-->
+	<!-- Footer -->
+    <app-footer1></app-footer1>
+</div>

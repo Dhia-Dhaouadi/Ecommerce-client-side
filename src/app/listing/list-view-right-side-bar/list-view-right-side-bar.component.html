@@ -1,0 +1,228 @@
+<app-loading></app-loading>
+<div class="page-wraper">
+	<!-- header -->
+    <app-header1></app-header1>
+    <!-- header END -->
+    <!-- Content -->
+    <div class="page-content bg-white">
+        <!-- inner page banner -->
+        <app-banner1 [data]="banner"></app-banner1>
+        <!-- inner page banner END -->
+		<!-- contact area -->
+        <div class="content-block">
+			<div class="section-full content-inner bg-white">
+				<div class="container">
+					<div class="row">
+                    <ng-template [ngIf]="layout.sidebar">
+                      <div class="col-lg-4 col-md-6"  *ngIf="layout.sidebarPosition=='left'">
+                        <div class="sticky-top">
+                          <app-filter></app-filter>
+                          <app-tag-filter></app-tag-filter>
+                          <app-add2></app-add2>
+                        </div>
+                      </div>
+                    </ng-template>
+						<div class="" [ngClass]="{'col-lg-8 col-md-8': layout.sidebar === true, 'col-lg-12 col-md-12': layout.sidebar === false}">
+							<div class="listing-filter m-b40">
+								<div class="d-flex">
+									<div class="mr-auto">
+										<ul class="filter m-b0">
+											<li>
+												<select> 
+													<option>More Filters</option>
+													<option>Construction</option>
+													<option>Corodinator</option>
+													<option>Employer</option>
+													<option>Financial Career</option>
+													<option>Information Technology</option>
+													<option>Marketing</option>
+													<option>Quality check</option>
+													<option>Real Estate</option>
+													<option>Sales</option>
+													<option>Supporting</option>
+													<option>Teaching</option> 
+												</select>
+											</li>
+										</ul>
+									</div>
+									<div>
+										<ul class="filter-icon m-b0">
+											<li><a routerLink="/grid-view-left-side-bar"><i class="fa fa-th"></i></a></li>
+											<li><a routerLink="/list-view-left-side-bar"><i class="fa fa-th-list"></i></a></li>
+											<li><a href="javascript:void(0)"><i class="fa fa-search"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="listing-bx listing-half m-b30">
+										<div class="listing-media">
+											<img src="assets/images/listing/pic14.jpg" alt="">
+												<ul class="wish-bx">
+												<li><a class="like-btn" href="javascript:void(0)"><i class="fa fa-heart"></i></a></li>
+												<li><a class="info-btn" href="javascript:void(0)"><i class="fa fa-leaf"></i></a></li>
+											</ul>
+										</div>
+										<div class="listing-info">
+											<ul class="featured-star">
+												<li><i class="fa fa-star"></i></li>
+												<li><i class="fa fa-star"></i></li>
+												<li><i class="fa fa-star"></i></li>
+												<li><i class="fa fa-star"></i></li>
+												<li><i class="fa fa-star"></i></li>
+												
+											</ul>
+											<h3 class="title"><a routerLink="/listing-details">Rowdy King City</a></h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm.</p>
+											<ul class="place-info">
+												<li class="place-location"><i class="fa fa-map-marker"></i>12/a, New</li>
+												<li class="open"><i class="fa fa-check"></i>Open Now</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-12">
+									<div class="listing-bx listing-half m-b30">
+										<div class="listing-media">
+											<img src="assets/images/listing/pic15.jpg" alt="">
+												<ul class="wish-bx">
+												<li><a class="like-btn" href="javascript:void(0)"><i class="fa fa-heart"></i></a></li>
+												<li><a class="info-btn" href="javascript:void(0)"><i class="fa fa-leaf"></i></a></li>
+											</ul>
+										</div>
+										<div class="listing-info">
+											<ul class="featured-star">
+												<li><i class="fa fa-star"></i></li>
+												<li><i class="fa fa-star"></i></li>
+												<li><i class="fa fa-star"></i></li>
+												<li><i class="fa fa-star"></i></li>
+												<li><i class="fa fa-star"></i></li>
+												
+											</ul>
+											<h3 class="title"><a routerLink="/listing-details">Rowdy King City</a></h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm.</p>
+											<ul class="place-info">
+												<li class="place-location"><i class="fa fa-map-marker"></i>12/a, New</li>
+												<li class="open"><i class="fa fa-check"></i>Open Now</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-12">
+									<div class="listing-bx listing-half m-b30">
+										<div class="listing-media">
+											<img src="assets/images/listing/pic13.jpg" alt="">
+												<ul class="wish-bx">
+												<li><a class="like-btn" href="javascript:void(0)"><i class="fa fa-heart"></i></a></li>
+												<li><a class="info-btn" href="javascript:void(0)"><i class="fa fa-leaf"></i></a></li>
+											</ul>
+										</div>
+										<div class="listing-info">
+											<ul class="featured-star">
+												<li><i class="fa fa-star"></i></li>
+												<li><i class="fa fa-star"></i></li>
+												<li><i class="fa fa-star"></i></li>
+												<li><i class="fa fa-star"></i></li>
+												<li><i class="fa fa-star"></i></li>
+												
+											</ul>
+											<h3 class="title"><a routerLink="/listing-details">Rowdy King City</a></h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm.</p>
+											<ul class="place-info">
+												<li class="place-location"><i class="fa fa-map-marker"></i>12/a, New</li>
+												<li class="open"><i class="fa fa-check"></i>Open Now</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-12">
+									<div class="listing-bx listing-half m-b30">
+										<div class="listing-media">
+											<img src="assets/images/listing/pic16.jpg" alt="">
+												<ul class="wish-bx">
+												<li><a class="like-btn" href="javascript:void(0)"><i class="fa fa-heart"></i></a></li>
+												<li><a class="info-btn" href="javascript:void(0)"><i class="fa fa-leaf"></i></a></li>
+											</ul>
+										</div>
+										<div class="listing-info">
+											<ul class="featured-star">
+												<li><i class="fa fa-star"></i></li>
+												<li><i class="fa fa-star"></i></li>
+												<li><i class="fa fa-star"></i></li>
+												<li><i class="fa fa-star"></i></li>
+												<li><i class="fa fa-star"></i></li>
+												
+											</ul>
+											<h3 class="title"><a routerLink="/listing-details">Rowdy King City</a></h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm.</p>
+											<ul class="place-info">
+												<li class="place-location"><i class="fa fa-map-marker"></i>12/a, New</li>
+												<li class="open"><i class="fa fa-check"></i>Open Now</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-12">
+									<div class="listing-bx listing-half m-b30">
+										<div class="listing-media">
+											<img src="assets/images/listing/pic17.jpg" alt="">
+												<ul class="wish-bx">
+												<li><a class="like-btn" href="javascript:void(0)"><i class="fa fa-heart"></i></a></li>
+												<li><a class="info-btn" href="javascript:void(0)"><i class="fa fa-leaf"></i></a></li>
+											</ul>
+										</div>
+										<div class="listing-info">
+											<ul class="featured-star">
+												<li><i class="fa fa-star"></i></li>
+												<li><i class="fa fa-star"></i></li>
+												<li><i class="fa fa-star"></i></li>
+												<li><i class="fa fa-star"></i></li>
+												<li><i class="fa fa-star"></i></li>
+												
+											</ul>
+											<h3 class="title"><a routerLink="/listing-details">Rowdy King City</a></h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm.</p>
+											<ul class="place-info">
+												<li class="place-location"><i class="fa fa-map-marker"></i>12/a, New</li>
+												<li class="open"><i class="fa fa-check"></i>Open Now</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Pagination start -->
+							<div class="pagination-bx clearfix text-center">
+								<ul class="pagination">
+									<li class="previous"><a href="javascript:void(0)"><i class="fa fa-arrow-left"></i></a></li>
+									<li><a href="javascript:void(0)">1</a></li>
+									<li><a href="javascript:void(0)">2</a></li>
+									<li><a href="javascript:void(0)">...</a></li>
+									<li class="active"><a href="javascript:void(0)">7</a></li>
+									<li class="next"><a href="javascript:void(0)"><i class="fa fa-arrow-right"></i></a></li>
+								</ul>
+							</div>
+							<!-- Pagination END -->
+						</div>
+            
+            <ng-template [ngIf]="layout.sidebar">
+              <div class="col-lg-4 col-md-6"  *ngIf="layout.sidebarPosition=='right'">
+                <div class="sticky-top">
+                  <app-filter></app-filter>
+                  <app-tag-filter></app-tag-filter>
+                  <app-add2></app-add2>
+                </div>
+              </div>
+            </ng-template>
+					</div>
+				</div>
+			</div>
+        </div>
+		<!-- contact area END -->
+    </div>
+    <!-- Content END-->
+	<!-- Footer -->
+    <app-footer1></app-footer1>
+    <!-- Footer END-->
+    <button class="scroltop fa fa-chevron-up" ></button>
+</div>
