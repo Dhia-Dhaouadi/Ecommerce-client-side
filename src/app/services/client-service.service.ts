@@ -17,5 +17,11 @@ export class ClientServiceService {
     });
   }
 
+  LoginAuth(data: any) {
+    const headers = new HttpHeaders();
+    return this.http.post('http://localhost:3000/AuthClient', data, {
+      headers: headers,
+    });
+  }
 
 }

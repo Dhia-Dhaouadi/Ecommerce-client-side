@@ -1,7 +1,16 @@
 .b-color{
   background-color: #CF4DCE;
+  margin-top: 18%;
+}
+
+.b-color i{
+  font-size: 15px !important;
 }
 
 .b-link{
   color:white;
+}
+
+.compte i {
+  font-size: 15px !important;
 }

@@ -3,14 +3,12 @@
   <span></span>
   <span></span>
 </button>
-<!-- extra nav -->
+
 <div class="extra-nav">
     <div class="extra-cell">
-        <a routerLink="/Login" class="site-button-link white"><i class="ti-import m-r5 rotate90"></i> Sign In</a>
-        <a routerLink="/add-listing" class="site-button radius-xl m-l10 b-color"><i class="flaticon-cat-cart-of-ecommerce"></i>&nbsp;&nbsp;Panier</a>
     </div>
 </div>
-<!-- main nav -->
+
 <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
   <ul class="nav navbar-nav">
     <li class="down active"><a routerLink="">Accueil</a>
@@ -60,6 +58,15 @@
         <li><a routerLink="/blog-details">Blog Details</a></li>
       </ul>
     </li>
-    <li><a routerLink="/contact-us">Contact Us</a></li>
+    <li class="down" ><a routerLink="/contact-us">Contact Us</a></li>
+    <li class="down"> <a routerLink="/Login" class="site-button-link compte white" [hidden]="Loggedin==true"><i class="ti-import m-r5 rotate90"></i> Sign In</a>
+    </li>
+    <li class="down"><a class="compte" [hidden]="Loggedin==false"><i class="fa fa-user-circle"></i> Compte <i class="fa fa-chevron-down"></i></a>
+      <ul class="sub-menu">
+        <li><a (click)="onLogout($event)">Déconnexion</a></li>
+      </ul>
+    </li>
+    <li class="down"><a class="compte" *ngIf="Loggedin==true" routerLink="/add-listing"><i class="flaticon-cat-cart-of-ecommerce"></i>&nbsp;&nbsp;Panier</a>
+      <a class="compte" *ngIf="Loggedin==false" routerLink="/Login"><i class="flaticon-cat-cart-of-ecommerce"></i>&nbsp;&nbsp;Panier</a></li>
   </ul>
 </div>
