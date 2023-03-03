@@ -88,12 +88,10 @@ import { CityOwl2Component } from './elements/locations/city-owl2/city-owl2.comp
 import { ClientsComponent } from './elements/clients/clients.component';
 import { Banner3Component } from './elements/banners/banner3/banner3.component';
 import { LoginComponent } from './pages/login/login.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
-
-/* import { AgmCoreModule } from '@agm/core'; */
-
-
-/* OWL Crousal*/
 
 @NgModule({
   declarations: [
@@ -178,14 +176,13 @@ import { LoginComponent } from './pages/login/login.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     CarouselModule,
-    /* AgmCoreModule.forRoot({
-      // please get your own API key here:
-      // https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en
-      apiKey: 'AIzaSyBjirg3UoMD5oUiFuZt3P9sErZD-2Rxc68'
-    }) */
+    FormsModule,
+    RouterModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
