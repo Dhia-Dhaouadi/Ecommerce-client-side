@@ -1,7 +1,7 @@
 <app-loading></app-loading>
 <div class="page-wraper">
 	<!-- header -->
-    <app-header1></app-header1>
+    <app-header2></app-header2>
     <!-- header END -->
     <!-- Content -->
     <div class="page-content bg-white">
@@ -22,14 +22,14 @@
                         </div>
                       </div>
                     </ng-template>
-                    
+
 						<div class="" [ngClass]="{'col-lg-8 col-md-8': layout.sidebar === true, 'col-lg-12 col-md-12': layout.sidebar === false}">
 							<div class="listing-filter m-b40">
 								<div class="d-flex">
 									<div class="mr-auto">
 										<ul class="filter m-b0">
 											<li>
-												<select> 
+												<select>
 													<option>More Filters</option>
 													<option>Construction</option>
 													<option>Corodinator</option>
@@ -41,7 +41,7 @@
 													<option>Real Estate</option>
 													<option>Sales</option>
 													<option>Supporting</option>
-													<option>Teaching</option> 
+													<option>Teaching</option>
 												</select>
 											</li>
 										</ul>
@@ -72,7 +72,7 @@
 												<li><i class="fa fa-star"></i></li>
 												<li><i class="fa fa-star"></i></li>
 												<li><i class="fa fa-star"></i></li>
-												
+
 											</ul>
 											<h3 class="title"><a routerLink="/listing-details">Rowdy King City</a></h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm.</p>
@@ -99,7 +99,7 @@
 												<li><i class="fa fa-star"></i></li>
 												<li><i class="fa fa-star"></i></li>
 												<li><i class="fa fa-star"></i></li>
-												
+
 											</ul>
 											<h3 class="title"><a routerLink="/listing-details">Rowdy King City</a></h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm.</p>
@@ -126,7 +126,7 @@
 												<li><i class="fa fa-star"></i></li>
 												<li><i class="fa fa-star"></i></li>
 												<li><i class="fa fa-star"></i></li>
-												
+
 											</ul>
 											<h3 class="title"><a routerLink="/listing-details">Rowdy King City</a></h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm.</p>
@@ -153,7 +153,7 @@
 												<li><i class="fa fa-star"></i></li>
 												<li><i class="fa fa-star"></i></li>
 												<li><i class="fa fa-star"></i></li>
-												
+
 											</ul>
 											<h3 class="title"><a routerLink="/listing-details">Rowdy King City</a></h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm.</p>
@@ -180,7 +180,7 @@
 												<li><i class="fa fa-star"></i></li>
 												<li><i class="fa fa-star"></i></li>
 												<li><i class="fa fa-star"></i></li>
-												
+
 											</ul>
 											<h3 class="title"><a routerLink="/listing-details">Rowdy King City</a></h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm.</p>
@@ -205,7 +205,7 @@
 							</div>
 							<!-- Pagination END -->
 						</div>
-            
+
             <ng-template [ngIf]="layout.sidebar">
               <div class="col-lg-4 col-md-6"  *ngIf="layout.sidebarPosition=='right'">
                 <div class="sticky-top">

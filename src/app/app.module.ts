@@ -1,11 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { Home1Component } from './home1/home1.component';
 import { Home2Component } from './home2/home2.component';
-import { Home3Component } from './home3/home3.component';
 import { Error404Component } from './pages/error404/error404.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { RegisterComponent } from './pages/register/register.component';
@@ -23,9 +20,7 @@ import { ListingDetail3Component } from './listing/listing-detail3/listing-detai
 import { BlogComponent } from './blog/blog/blog.component';
 import { BlogDetailsComponent } from './blog/blog-details/blog-details.component';
 import { LoadingComponent } from './elements/loading/loading.component';
-import { Header1Component } from './elements/header/header1/header1.component';
 import { Header2Component } from './elements/header/header2/header2.component';
-import { Header3Component } from './elements/header/header3/header3.component';
 import { Footer1Component } from './elements/footer/footer1/footer1.component';
 import { Footer2Component } from './elements/footer/footer2/footer2.component';
 import { Footer3Component } from './elements/footer/footer3/footer3.component';
@@ -96,9 +91,7 @@ import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
-    Home1Component,
     Home2Component,
-    Home3Component,
     Error404Component,
     ContactUsComponent,
     RegisterComponent,
@@ -116,9 +109,7 @@ import { RouterModule } from '@angular/router';
     BlogComponent,
     BlogDetailsComponent,
     LoadingComponent,
-    Header1Component,
     Header2Component,
-    Header3Component,
     Footer1Component,
     Footer2Component,
     Footer3Component,

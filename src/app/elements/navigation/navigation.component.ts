@@ -24,12 +24,14 @@ export class NavigationComponent implements OnInit {
     else{
       this.Loggedin = false;
     }
+    console.log(this.Loggedin);
   }
 
   onLogout(e: Event) {
     e.preventDefault();
     localStorage.removeItem('isLoggedin');
     this.Loggedin = false;
+    this.router.navigate(['/Login']);
     Swal.fire({
       position: 'top-end',
       title: 'Vous êtes Déconnecté',

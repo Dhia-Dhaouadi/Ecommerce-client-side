@@ -13,60 +13,15 @@
   <ul class="nav navbar-nav">
     <li class="down active"><a routerLink="">Accueil</a>
     </li>
-    <li class="down"><a href="javascript:vois(0);">Pages <i class="fa fa-chevron-down"></i></a>
-      <ul class="sub-menu">
-        <li><a routerLink="/error-404">Error 404</a></li>
-        <li><a routerLink="/contact-us">Contact Us</a></li>
-        <li><a routerLink="/register">Register<span class="tag-new">New</span></a></li>
-      </ul>
-    </li>
-    <li class="down"><a href="javascript:vois(0);">Listings <i class="fa fa-chevron-down"></i></a>
-      <ul class="sub-menu">
-        <li><a routerLink="/add-listing">Add Listing<span class="tag-new">New</span></a></li>
-        <li><a href="javascript:vois(0);">Listings <i class="fa fa-angle-right"></i></a>
-          <ul class="sub-menu">
-
-            <li><a routerLink="/list-view-left-side-bar">Listing Left Sidebar</a></li>
-            <li><a routerLink="/list-view-right-side-bar">Listing Right Sidebar</a></li>
-          </ul>
-        </li>
-        <li><a href="javascript:vois(0);">Listing Grid <i class="fa fa-angle-right"></i></a>
-          <ul class="sub-menu">
-            <li><a routerLink="/listing">Listing</a></li>
-            <li><a routerLink="/grid-view-left-side-bar">Left Sidebar</a></li>
-            <li><a routerLink="/grid-view-right-side-bar">Right Sidebar</a></li>
-          </ul>
-        </li>
-        <li><a href="javascript:vois(0);">Listing Map <i class="fa fa-angle-right"></i></a>
-          <ul class="sub-menu">
-            <li><a routerLink="/listing-map-left">Left Sidebar</a></li>
-            <li><a routerLink="/listing-map-right">Right Sidebar</a></li>
-          </ul>
-        </li>
-        <li><a href="javascript:vois(0);">Listing Details <i class="fa fa-angle-right"></i></a>
-          <ul class="sub-menu">
-            <li><a routerLink="/listing-details">Listing Details 1</a></li>
-            <li><a routerLink="/listing-details-2">Listing Details 2<span class="tag-new">New</span></a></li>
-            <li><a routerLink="/listing-details-3">Listing Details 3<span class="tag-new">New</span></a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li class="down"><a href="javascript:vois(0);">Blog <i class="fa fa-chevron-down"></i></a>
-      <ul class="sub-menu">
-        <li><a routerLink="/blog-standard">Blog</a></li>
-        <li><a routerLink="/blog-details">Blog Details</a></li>
-      </ul>
-    </li>
-    <li class="down" ><a routerLink="/contact-us">Contact Us</a></li>
     <li class="down"> <a routerLink="/Login" class="site-button-link compte white" [hidden]="Loggedin==true"><i class="ti-import m-r5 rotate90"></i> Sign In</a>
     </li>
-    <li class="down"><a class="compte" [hidden]="Loggedin==false"><i class="fa fa-user-circle"></i> Compte <i class="fa fa-chevron-down"></i></a>
+    <li class="down"><a class="compte" [hidden]="Loggedin==false"><i class="fa fa-user-circle"></i> {{userData.UserName}}</a>
       <ul class="sub-menu">
-        <li><a (click)="onLogout($event)">Déconnexion</a></li>
+        <li><a  class="compte" (click)="onLogout($event)"><i class="ti-receipt"></i>  Mes commandes</a></li>
+        <li><a  class="compte" (click)="onLogout($event)"><i class="ti-power-off"></i>  Déconnexion</a></li>
       </ul>
     </li>
-    <li class="down"><a class="compte" *ngIf="Loggedin==true" routerLink="/add-listing"><i class="flaticon-cat-cart-of-ecommerce"></i>&nbsp;&nbsp;Panier</a>
-      <a class="compte" *ngIf="Loggedin==false" routerLink="/Login"><i class="flaticon-cat-cart-of-ecommerce"></i>&nbsp;&nbsp;Panier</a></li>
+    <li class="down" *ngIf="Loggedin==true"><a class="compte" routerLink="/add-listing"><i class="flaticon-cat-cart-of-ecommerce"></i> Panier</a></li>
+    <li class="down" *ngIf="Loggedin==false"><a class="compte" routerLink="/Login" ><i class="flaticon-cat-cart-of-ecommerce"></i> Panier</a></li>
   </ul>
 </div>
